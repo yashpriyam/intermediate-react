@@ -5,7 +5,7 @@ const PropSetContext = createContext({
   setState: () => {}
 });
 
-export const Parent = () => {
+export const UseContextApp = () => {
   const [state, setState] = useState("string1");
   return (
     <PropSetContext.Provider value={{ stateVar: state, setState }}>
